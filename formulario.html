@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tus conocimientos del Sistema Solar</title>
+    <link rel="stylesheet" type="text/css" href="../css/formulario.css">
+</head>
+<body>
+
+    <div id="inicio">
+        <div class="card">
+            <h1>Cuestionario</h1>
+            <h2>Instrucciones:</h2>
+            <p>
+                 Responde las 13 preguntas.
+                 <br>Tienes 5 minutos. 
+                 <br>Al agotarse el tiempo, el examen se corregirá solo y se bloqueará.
+            </p>
+         
+                 <button id="btn-empezar">Empezar</button>
+        </div>
+    
+          
+    </div>
+        <div id="contenedor-test" class="oculto">
+
+            <!-- Cronometro -->
+        <div id="timer">Tiempo: <span id="cuenta-atras">05:00</span></div>
+        
+        <form id="quiz-form">
+            <h2>Cuestionario de Ciencia</h2>
+
+            <div class="pregunta" data-answer="Mercurio">
+                <p>1. ¿Cuál es el planeta más cercano al Sol?</p>
+                <label><input type="radio" name="q1" value="Mercurio"> Mercurio</label><br>
+                <label><input type="radio" name="q1" value="Venus"> Venus</label><br>
+                <label><input type="radio" name="q1" value="Tierra"> Tierra </label>
+                <div class="feedback"></div>
+            </div>
+
+            <div class="pregunta" data-answer="Marte">
+                <p>2. ¿Cuál es conocido como el "Planeta Rojo"?</p>
+                <label><input type="radio" name="q2" value="Marte"> Marte</label> <br>
+                <label><input type="radio" name="q2" value="Saturno"> Saturno</label> <br>
+                <label><input type="radio" name="q2" value="Tierra"> Tierra</label>
+                <div class="feedback"></div>
+            </div>
+
+            <div class="pregunta" data-answer="Júpiter">
+                <p>3. ¿Cuál es el planeta más grande del Sistema Solar?</p>
+                <label><input type="radio" name="q3" value="Júpiter"> Júpiter</label> <br>
+                <label><input type="radio" name="q3" value="Tierra"> Tierra</label> <br>
+                <label><input type="radio" name="q3" value="Saturno"> Saturno</label>
+                <div class="feedback"></div>
+            </div>
+
+            <div class="pregunta" data-answer="Venus">
+                <p>4. ¿Qué planeta es el más caluroso?</p>
+                <label><input type="radio" name="q4" value="Venus"> Venus</label> <br>
+                <label><input type="radio" name="q4" value="Mercurio"> Mercurio</label> <br>
+                <label><input type="radio" name="q4" value="Júpiter"> Júpiter</label>
+                <div class="feedback"></div>
+            </div>
+
+            <div class="pregunta" data-answer="Vía Láctea">
+                <p>5. ¿Cómo se llama nuestra galaxia?</p>
+                <label><input type="radio" name="q5" value="Vía Láctea"> Vía Láctea</label> <br>
+                <label><input type="radio" name="q5" value="Andrómeda"> Andrómeda</label> <br>
+                <label><input type="radio" name="q5" value="Milky Way"> Milky Way</label>
+                <div class="feedback"></div>
+            </div>
+
+            <div class="pregunta" data-answer="Hidrógeno">
+                <p>6. ¿Cuál es el gas más abundante en el Sol?</p>
+                <label><input type="radio" name="q6" value="Hidrógeno"> Hidrógeno</label> <br>
+                <label><input type="radio" name="q6" value="Oxígeno"> Oxígeno</label> <br>
+                 <label><input type="radio" name="q6" value="Helio"> Helio</label>
+                <div class="feedback"></div>
+            </div>
+
+            <div class="pregunta" data-answer="8">
+                <p>7. ¿Cuántos planetas hay en el Sistema Solar?</p>
+                <label><input type="radio" name="q7" value="8"> 8</label> <br>
+                <label><input type="radio" name="q7" value="9"> 9</label> <br>
+                <label><input type="radio" name="q7" value="10"> 10</label>
+                <div class="feedback"></div>
+            </div>
+
+            <div class="pregunta" data-answer="Saturno">
+                <p>8. ¿Qué planeta tiene los anillos más visibles?</p>
+                <label><input type="radio" name="q8" value="Saturno"> Saturno</label> <br>
+                <label><input type="radio" name="q8" value="Neptuno"> Neptuno</label> <br>
+                <label><input type="radio" name="q8" value="Júpiter"> Júpiter</label>
+                <div class="feedback"></div>
+            </div>
+
+            <div class="pregunta" data-answer="La Luna">
+                <p>9. ¿Cuál es el único satélite natural de la Tierra?</p>
+                <label><input type="radio" name="q9" value="La Luna"> La Luna</label> <br>
+                <label><input type="radio" name="q9" value="Titán"> Titán</label> <br>
+                <label><input type="radio" name="q9" value="Europa"> Europa</label>
+                <div class="feedback"></div>
+            </div>
+
+            <div class="pregunta" data-answer="Estrella">
+                <p>10. El Sol es una...</p>
+                <label><input type="radio" name="q10" value="Estrella"> Estrella</label><br>
+                <label><input type="radio" name="q10" value="Planeta"> Planeta</label><br>
+                 <label><input type="radio" name="q10" value="Satélite"> Satélite</label>
+                <div class="feedback"></div>
+            </div>
+
+              <!-- Select -->
+            <div class="pregunta" data-answer="Plutón">
+                <p>11. ¿Cuál de estos es un planeta enano?</p>
+                <select name="q11">
+                    <option value="">Selecciona uno...</option>
+                    <option value="Plutón">Plutón</option>
+                    <option value="Tierra">Tierra</option>
+                    <option value="Marte">Marte</option>
+                </select>
+                <div class="feedback"></div>
+            </div>
+
+            <!-- Checkbox -->
+
+            <div class="pregunta" data-answer="Tierra,Marte">
+                <p>12. Selecciona los planetas rocosos:</p>
+                <label><input type="checkbox" name="q12" value="Tierra"> Tierra</label><br>
+                <label><input type="checkbox" name="q12" value="Marte"> Marte</label><br>
+                <label><input type="checkbox" name="q12" value="Júpiter"> Júpiter</label>
+                <div class="feedback"></div>
+            </div>
+
+              <!-- Texto -->
+
+            <div class="pregunta" data-answer="tierra">
+                <p>13. ¿En qué planeta vivimos? </p>
+                <input type="text" name="q13" required placeholder="Escribe aquí...">
+                <div class="feedback"></div>
+            </div>
+
+            <button type="submit" id="btn-enviar">Terminar Examen</button>
+        </form>
+    </div>
+
+    <script src="../js/quiz.js"></script>
+     
+</body>
+  </html>
