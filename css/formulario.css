@@ -25,12 +25,15 @@ background:#213c44;
 }
 
 
+
 .correcta { 
-    color:rgb(132, 217, 4)
+    background-color: #6ae787;
+    
 }
 .incorrecta {
-    color:red
+    background-color: #ef1426;
 }
+
 .feedback { 
     display: block; 
     font-weight: bold; 
@@ -47,6 +50,7 @@ background:#213c44;
    margin: 0 auto;
    max-width: 600px;
 }
+
 
 
 
